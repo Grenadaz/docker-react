@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t Grenadaz/docker-react -f Dockerfile.dev .
+  - docker build -t grenadaz/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true Grenadaz/docker-react npm run test
+  - docker run -e CI=true grenadaz/docker-react npm run test
